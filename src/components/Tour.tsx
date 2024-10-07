@@ -28,7 +28,7 @@ const TourComponent = () => {
       selector: ".start-learning-link",
       content: (
         <div>
-          <p>Click here to start learning!</p>
+          <p>Hi! My name is Plankty!. Click here to start learning!</p>
           <img src="plankton_teacher.png" alt="Start Learning" />
         </div>
       ),
@@ -56,7 +56,20 @@ const TourComponent = () => {
       content: (
         <div>
           <p>Click the button below to end the tour.</p>
-          <button onClick={handleTourClose} style={{ backgroundColor: '#28a745', color: 'white', borderRadius: '12px', padding: '10px 20px', border: 'none', cursor: 'pointer', fontSize: '14px' }}>End Tour</button>
+          <button
+            onClick={handleTourClose}
+            style={{
+              backgroundColor: "#28a745",
+              color: "white",
+              borderRadius: "12px",
+              padding: "10px 20px",
+              border: "none",
+              cursor: "pointer",
+              fontSize: "14px",
+            }}
+          >
+            End Tour
+          </button>
         </div>
       ),
     },
