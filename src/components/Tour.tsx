@@ -28,7 +28,10 @@ const TourComponent = () => {
       selector: ".start-learning-link",
       content: (
         <div>
-          <p>Hi! My name is Plankty!. Click here to start learning!</p>
+          <p>
+            Hi! My name is Plankty🦠🎓!. Click here to start learning about
+            PACE!
+          </p>
           <img src="plankton_teacher.png" alt="Start Learning" />
         </div>
       ),
