@@ -1,50 +1,5 @@
-# React + TypeScript + Vite
+# Arandu PACE
+We’ve built an engaging web app that transforms NASA’s groundbreaking PACE satellite mission into an interactive experience for everyone. Users can dive into its most thrilling discoveries through a sleek, vertical slide presentation, featuring vivid images, intriguing topics, and bite-sized explanations that ignite curiosity. Our web app also features "Planktyn," an AI-powered chatbot that guides users through PACE's most important findings. Planktyn allows users to ask questions, dive deeper into the data, view relevant images, access official NASA resources, and explore further learning opportunities. This approach is essential because it adapts to various learning environments—whether it’s a teacher using the platform to present the mission in a classroom or students engaging in self-learning. Planktyn is prepared to answer questions ranging from the simplest to the most complex, making it accessible for all. Additionally, users can not only explore the data but also learn about the instruments PACE uses to gather it.
+![Logo Arandu Pace](https://github.com/user-attachments/assets/b510d779-a761-46da-9796-b29d76a60895)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+Backend Repo: https://github.com/marcosferr/NASA-Space-Apps-Chatbot
