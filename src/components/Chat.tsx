@@ -28,6 +28,17 @@ const Chat = () => {
     }
   };
 
+  const handleImageError = (
+    e: React.SyntheticEvent<HTMLImageElement, Event>
+  ) => {
+    e.currentTarget.style.display = "none";
+  };
+
+  const handlePlayImageSVGError = (
+    e: React.SyntheticEvent<HTMLImageElement, Event>
+  ) => {
+    e.currentTarget.src = "/PACE-NASA-Space-App-Challenge/play.svg";
+  };
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const lightGalleryRef = useRef<any>(null);
 
@@ -80,7 +91,7 @@ const Chat = () => {
                       <div>
                         {msg.type === "computer" ? (
                           <img
-                            src="/plankton_teacher.png"
+                            src="/PACE-NASA-Space-App-Challenge/plankton_teacher.png"
                             width={50}
                             height={50}
                           ></img>
@@ -107,6 +118,7 @@ const Chat = () => {
                         width={300}
                         height={300}
                         onClick={() => openGallery(index)}
+                        onError={handleImageError}
                       />
                     ))}{" "}
                   </div>
@@ -147,10 +159,15 @@ const Chat = () => {
             <div id="bottomRef" ref={bottomRef} tabIndex={-1}></div>
             {messages.length > 0 && (
               <button
-                className="text-blue-500 underline"
+                className="text-white bg-green-500 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 font-bold py-2 px-4 rounded-full"
                 onClick={() => playTTS()}
               >
-                Play
+                <img
+                  src="play.svg"
+                  alt="play button"
+                  color="white"
+                  onError={handlePlayImageSVGError}
+                />
               </button>
             )}
           </div>
